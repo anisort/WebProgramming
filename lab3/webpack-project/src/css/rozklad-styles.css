@@ -1,0 +1,30 @@
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+}
+
+.day-colored{
+    background-color: rgb(184, 229, 229);
+}
+
+.day-top {
+    border-bottom: none;
+}
+
+.day-middle {
+    border-top: none;
+    border-bottom: none;
+}
+
+.day-bottom {
+    border-top: none;
+}
+
+.numerator{
+    border-bottom: none;
+}
+
+.denominator{
+    border-top: none;
+}
