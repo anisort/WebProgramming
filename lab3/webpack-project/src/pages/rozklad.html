@@ -3,18 +3,19 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <link rel="stylesheet" href="../css/rozklad-styles.css">
-    <title>Розклад</title>
+    <title><%= htmlWebpackPlugin.options.title %></title>
 </head>
 <body>
 
     <header>
-        <h2>Розклад занять</h2>
+        <h2>Schedule</h2>
     </header>
 
     <nav>
-        <button onclick="window.location.href='index.html';">Головна</button>
-        <button onclick="window.location.href='news.html';">Новини</button>
-        <button onclick="window.location.href='photo.html';">Галерея</button>
+        <button onclick="window.location.href='index.html';">Home</button>
+        <button onclick="window.location.href='rozklad.html';">Schedule</button>
+        <button onclick="window.location.href='photo.html';">Gallery</button>
+        <button onclick="window.location.href='news.html';">News</button>
     </nav>
 
     <div class="main">
@@ -165,7 +166,7 @@
     </div>
 
     <footer>
-        Тут футер
+        Footer information
     </footer>
 
 </body>
