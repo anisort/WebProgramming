@@ -1,0 +1,20 @@
+.news-block {
+    margin: auto;
+}
+
+.news-block__content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.news-block__image {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    padding-bottom: 10px;
+}
+
+.news-block__text {
+    padding: 10px;
+    text-align: justify;
+}
