@@ -2,7 +2,7 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin'); // Добавляем MiniCssExtractPlugin
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
     mode: 'production',
@@ -16,9 +16,9 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.scss$/, // Поддержка SCSS
+                test: /\.scss$/,
                 use: [
-                    MiniCssExtractPlugin.loader, // Извлечение CSS в отдельный файл
+                    MiniCssExtractPlugin.loader,
                     'css-loader',   // Загрузка CSS
                     'sass-loader',  // Компиляция SCSS в CSS
                 ],
@@ -83,7 +83,7 @@ module.exports = {
             ],
         }),
         new MiniCssExtractPlugin({
-            filename: '[name].css', // Имя итогового CSS файла
+            filename: '[name].css',
         }),
     ],
     devServer: {
