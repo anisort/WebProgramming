@@ -1,0 +1,57 @@
+$background-color: rgb(0, 153, 153);
+$gradient: linear-gradient(180deg, rgba(0, 153, 153, 1) 20%, rgba(29, 115, 115, 1) 40%, rgba(0, 99, 99, 1) 60%, rgba(51, 204, 204, 1) 80%, rgba(92, 204, 204, 1) 100%);
+$header-footer-color: #006363;
+$navigator-color: #1D7373;
+$button-color: #33CCCC;
+$button-hover-color: #62dada;
+$text-color: #ffffff;
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: $background-color;
+    background: $gradient;
+    color: $text-color;
+    font-size: 20px;
+}
+
+.header {
+    text-align: center;
+    padding: 20px;
+    background-color: $header-footer-color;
+}
+
+.navigator {
+    display: flex;
+    justify-content: space-evenly;
+    flex: 1;
+    flex-wrap: wrap;
+    padding: 20px;
+    background-color: $navigator-color;
+}
+
+.main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.footer__info {
+    text-align: center;
+    padding: 20px;
+    background-color: $header-footer-color;
+    margin: auto;
+}
+
+.navigator__button {
+    background-color: $button-color;
+    border: none;
+    padding: 10px 20px;
+    color: $text-color;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.navigator__button:hover {
+    background-color: $button-hover-color;
+}
