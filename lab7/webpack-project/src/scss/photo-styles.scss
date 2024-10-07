@@ -1,0 +1,38 @@
+.gallery {
+    width: 1200px;
+    margin: auto;
+}
+
+.gallery__line {
+    display: flex;
+    justify-content: space-between;
+}
+
+.gallery__caption {
+    text-align: center;
+}
+
+.gallery__element a img {
+    width: 550px;
+    height: 350px;
+    object-fit: cover;
+    padding: 10pxs;
+}
+
+@media (max-width: 1200px) {
+    .gallery {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .gallery__line {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .gallery__element a img {
+        width: 90%;
+        height: auto;
+        padding: 5px;
+    }
+}

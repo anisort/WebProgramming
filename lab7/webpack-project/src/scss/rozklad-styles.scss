@@ -1,0 +1,56 @@
+.schedule {
+    width: 1200px;
+    margin: auto;
+}
+
+.schedule__header,
+.schedule th,
+.schedule td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+}
+
+.schedule__day--colored {
+    background-color: rgb(184, 229, 229);
+}
+
+.schedule__day-top {
+    border-bottom: none;
+}
+
+.schedule__day-middle {
+    border-top: none;
+    border-bottom: none;
+}
+
+.schedule__day-bottom {
+    border-top: none;
+}
+
+.schedule__numerator {
+    border-bottom: none;
+}
+
+.schedule__denominator {
+    border-top: none;
+}
+
+.teachers-list {
+    text-align: center;
+}
+
+.teachers-list__items {
+    list-style-type: none;
+}
+
+.teachers-list__item {
+    margin: 5px 0;
+}
+
+@media (max-width: 1200px) {
+    .schedule {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
