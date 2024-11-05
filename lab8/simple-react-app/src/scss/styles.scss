@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
 
-$background-color: #ffffff;
 $font-family:'Noto Sans JP', sans-serif;
 
 * {
@@ -11,13 +10,13 @@ html {
     font-family: $font-family;
 }
 
-body {
-    margin: 0;
-    background-color: $background-color;
-    font-family: $font-family;
-}
+// body {
+//     margin: 0;
+//     background-color: $background-color;
+//     font-family: $font-family;
+// }
 
-
+// $background-color: #ffffff;
 // $text-color: #3a3a3a;
 // $dark-background: #2a2a2a;
 // $expense-item-background: #4b4b4b;

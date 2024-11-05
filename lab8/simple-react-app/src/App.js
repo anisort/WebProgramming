@@ -1,6 +1,7 @@
 import React from 'react';
 import Expenses from './components/Expenses';
 import './scss/styles.scss';
+import styled from 'styled-components';
 
 const expenses = [
   { id: 'e1', title: 'Toilet Paper', amount: 94.12, date: new Date(2024, 7, 14) },
@@ -9,11 +10,17 @@ const expenses = [
   { id: 'e4', title: 'New Desk (Wooden)', amount: 450, date: new Date(2024, 5, 12) },
 ];
 
+const AppStyle = styled.body `
+  margin: 0;
+  background-color: #ffffff;
+  font-family: 'Noto Sans JP', sans-serif;
+`
+
 export default function App() {
   return (
-    <div>
+    <AppStyle>
       <h2>My Expenses tempalte</h2>
       <Expenses items={expenses} />
-    </div>
+    </AppStyle>
   );
 }
